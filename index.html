@@ -196,6 +196,17 @@
     flex-wrap:wrap;
   }
 
+  .see-all-link{
+    display:inline-block;
+    margin-top:18px;
+    font-size:0.82rem;
+    color:var(--muted);
+    letter-spacing:0.02em;
+    border-bottom:1px solid transparent;
+    transition:color 0.2s ease, border-color 0.2s ease;
+  }
+  .see-all-link:hover{color:var(--gold-bright); border-color:var(--gold-bright);}
+
   .cover-stage{
     flex:0 0 300px;
     display:flex;
@@ -528,7 +539,7 @@
     <div class="edition-grid">
 
       <a class="edition-card live reveal" href="https://www.amazon.com/dp/B0H655DL6Q" target="_blank" rel="noopener">
-        <span class="badge live">Live now</span>
+        <span class="seal live"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span><span class="label">Live now</span></span>
         <h3>eBook</h3>
         <p>Kindle edition. Read instantly on any device.</p>
         <span class="edition-link">Get it on Amazon
@@ -537,7 +548,7 @@
       </a>
 
       <a class="edition-card live reveal" href="https://www.amazon.com/dp/B0H6HK7T15" target="_blank" rel="noopener">
-        <span class="badge live">Live now</span>
+        <span class="seal live"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span><span class="label">Live now</span></span>
         <h3>Paperback</h3>
         <p>Hold it in your hands. Ships worldwide via Amazon.</p>
         <span class="edition-link">Get it on Amazon
@@ -546,14 +557,14 @@
       </a>
 
       <div class="edition-card locked reveal">
-        <span class="badge soon">Coming soon</span>
+        <span class="seal soon"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 7v5l3 3"/></svg></span><span class="label">Coming soon</span></span>
         <h3>Hardcover</h3>
         <p>The keepsake edition, bound for the shelf.</p>
         <span class="edition-link">In progress</span>
       </div>
 
       <div class="edition-card locked reveal">
-        <span class="badge soon">Bientôt · Coming soon</span>
+        <span class="seal soon"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 7v5l3 3"/></svg></span><span class="label">Bientôt · Coming soon</span></span>
         <h3>Édition Française</h3>
         <p>Pourquoi Jacob a-t-il attendu 14 ans ?</p>
         <span class="edition-link">Bientôt disponible</span>
